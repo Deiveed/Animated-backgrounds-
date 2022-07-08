@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>bg-3</title>
+      <style>
+       *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ }
+ body{
+  width:100vw;
+  height:100vh;
+  border:transparent;
+  background:#fff;
+ }
+ /*background-styling-start*/
+ .bg-imgs3{
+ 
+  width:100%;
+  height:100%;
+  opacity:0.7;
+  /*making-it-unscrollable*/
+  position:fixed;
+  z-index:1;
+ }
+ .bg-1{
+  width:100%;
+  height:100px;
+  background:red;
+  position:absolute;
+  top:50%;
+  left:40%;
+  border-radius:10px 0 0 10px;
+  box-shadow:0 3px 3px black, 0 4px 8px #333;
+  animation:slideinfromleft 0.9s ease-in ;
+ }
+ .bg-2{
+  width:100%;
+  height:100px;
+  background:lime;
+  position:absolute;
+  top:55%;
+  left:60%;
+border-radius:10px 0  0 10px ;
+box-shadow:0 3px 3px black, 0 4px 8px #333;
+animation:slideinfromleft 0.8s ease-in;
+ }
+ .bg-3{
+  width:100%;
+  height:100px;
+  background:dodgerblue;
+  
+  position:absolute;
+  top:60%;
+  left:80%;
+  border-radius:10px 0 0 10px; 
+  box-shadow:0 3px 3px black, 0 4px 8px #333;
+  animation:slideinfromleft 0.7s ease-in;
+  }
+  
+ .bg-4{
+  width:33.3%;
+  height:56.3%;
+  background:gold;
+  position:absolute;
+  border-radius:0 10px 0 0;
+  bottom:0;
+  left:0;
+  animation:slideinfrombottom 2s ease-in-out;
+ }
+ .bg-5{
+  width:33.3%;
+  height:33.3%;
+  background:#1DFFF6;
+  position:absolute;
+  border-radius:0 0 0 10px;
+  right:0;
+  animation:slideinfromtop 2s ease-in-out ;
+ }
+ @keyframes slideinfromleft{
+ 	0%{
+ 		transform:translateX(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes slideinfromtop{
+ 	0%{
+ 		transform:translateY(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes slideinfrombottom{
+ 	0%{
+ 		transform:translateY(100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ /*background-styling-end*/
+ /*main-content-styling-start*/
+ .body{
+  position:absolute;
+  z-index:100;
+  color:white;
+ }
+ .container{
+ 	width:100vw;
+  max-width:960px;
+  margin:0 auto;
+  padding:0 20px;
+ }
+ .header{
+ 	display:flex;
+ 	justify-content:space-between;
+ }
+ nav{
+ 	display:flex;
+ 	justify-content:space-between;
+ 	align-items:center;
+ 	height:auto;
+ 	
+ }
+ nav a{
+  color:white;
+  text-decoration:none;
+  margin:5px;
+  padding:5px;
+  font-weight:bold;
+ }
+ nav a:hover{
+ 	border-bottom:2px solid white;
+ 	transform:scale(0.9);
+ 	background:transparent;
+ }
+ img{
+ 	width:200px;
+ 	height:autopx;
+ }
+ p{
+ 	height
+ }
+ /*main-content-styling-end*/
+
+  
+		</style>
+	</head>
+	<body>
+		<!--background-markup-->
+		<div class="bg-imgs3">
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+			<div class="bg-3"></div>
+			<div class="bg-4"></div>
+			<div class="bg-5"></div>
+		</div>
+   </body>
+</html>

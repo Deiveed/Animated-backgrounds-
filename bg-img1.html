@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta refresh="2">
+		<title>Bacground design 1</title>
+		<style>
+ *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ }
+ body{
+  width:100vw;
+  height:100vh;
+  background:#000;
+ }
+ /*background-styling-start*/
+ .bg-imgs{
+  display:flex;
+  width:100%;
+  height:100%;
+  opacity:0.7;
+  /*making-it-unscrollable*/
+  position:fixed;
+  z-index:1;
+ }
+ .bg-1{
+  width:33.3%;
+  height:20.33%;
+  background:red;
+  border-radius:0 0 10px 0;
+  animation:slideinfromright 1s ease-in;
+ }
+ .bg-2{
+  width:33.3%;
+  height:10%;
+  background:lime;
+  position:absolute;
+  top:33.3%;
+  left:33.3%;
+border-radius:0 10px 0 10px ;
+animation: spin 1s forwards;
+ }
+ .bg-3{
+  width:33.3%;
+  height:35%;
+  background:blue;
+  position:absolute;
+  bottom:0;
+  right:0;
+  border-radius:10px 0 0 0;
+  animation:slideinfromleft 1s ease-in;
+   }
+ .bg-4{
+  width:33.3%;
+  height:56.3%;
+  background:gold;
+  position:absolute;
+  border-radius:0 10px 0 0;
+  bottom:0;
+  left:0;
+  animation:slideinfromtop 1s ease-in;
+ }
+ .bg-5{
+  width:33.3%;
+  height:33.3%;
+  background:#1DFFF6;
+  position:absolute;
+  border-radius:0 0 0 10px;
+  right:0;
+  animation:slideinfrombottom 1s ease-in;
+ }
+ @keyframes slideinfromleft{
+ 	0%{
+ 		transform:translateX(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes slideinfromright{
+ 	0%{
+ 		transform:translateX(100%);
+ 	}
+ 	100%{transform:translateX(0);
+ 	
+ 	}
+ }
+ @keyframes spin{
+ 	0%{
+ 		transform:scale(0.2);
+ 		background:red;
+ 		}
+ 		25%{
+ 			background:gold;
+ 			transform:rotate(90deg);
+
+ 		}
+ 		50%{
+ 			background:blue;
+ 			transform:rotate(180deg);
+ 		}
+ 		75%{
+ 			background:#1DFFF6;
+ 			transform:rotate(270deg);
+ 		}
+ 	100%{
+ 		background:lime;
+ 		transform:rotate(360deg);
+ 	}
+ }
+ @keyframes slideinfromtop{
+ 	0%{
+ 		transform:translateY(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes slideinfrombottom{
+ 	0%{
+ 		transform:translateY(100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ /*background-styling-end*/
+ /*main-content-styling-start*/
+ .body{
+  position:absolute;
+  z-index:100;
+  color:white;
+ }
+ .container{
+ 	width:100vw;
+  max-width:960px;
+  margin:0 auto;
+  padding:0 20px;
+ }
+ .header{
+ 	display:flex;
+ 	justify-content:space-between;
+ }
+ nav{
+ 	display:flex;
+ 	justify-content:space-between;
+ 	align-items:center;
+ 	height:auto;
+ 	
+ }
+ nav a{
+  color:white;
+  text-decoration:none;
+  margin:5px;
+  padding:5px;
+  font-weight:bold;
+ }
+ nav a:hover{
+ 	border-bottom:2px solid white;
+ 	transform:scale(0.9);
+ 	background:transparent;
+ }
+ img{
+ 	width:200px;
+ 	height:autopx;
+ }
+ p{
+ 	height
+ }
+ /*main-content-styling-end*/
+
+  
+		</style>
+	</head>
+	<body>
+		<!--background-markup-->
+		<div class="bg-imgs">
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+			<div class="bg-3"></div>
+			<div class="bg-4"></div>
+			<div class="bg-5"></div>
+		</div>
+		<!--main-content-markup-start-->
+	<!--	<div class="body">
+			<div class="container header">
+				<h1>La X-P-RIENS</h1>
+				<nav>
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">More</a>
+				</nav>
+			</div>
+			<div class="container main">
+				<img src="blackskinnedboy.jpg" alt="">
+					<p></p>
+			</div>
+		</div>-->
+	</body>
+</html>

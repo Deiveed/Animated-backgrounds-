@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>bg-2</title>
+      <style>
+       *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ }
+ body{
+  width:100vw;
+  height:100vh;
+  border:transparent;
+  background:#fff;
+ }
+ /*background-styling-start*/
+ .bg-imgs2{
+  width:100%;
+  height:100%;
+  opacity:1;
+  /*making-it-unscrollable*/
+  position:fixed;
+  z-index:1;
+ }
+ .bg-1{
+  width:33.3%;
+  height:50%;
+  background:red;
+  border-radius:0 0 16px 0;
+  position:absolute;
+  top:0;
+  left:-5px;
+  z-index:4;
+  box-shadow:0 4px 8px black;
+  animation:slideinfromleft 0.8s ease-in;
+ }
+ .bg-2{
+  width:33.3%;
+  height:50%;
+  background:lime;
+  position:absolute;
+  top:33.3%;
+  left:33.3%;
+border-radius:120px;
+z-index:-3;
+box-shadow:0 4px 8px black;
+  transform:skewX(25deg);
+  animation:spin 0.8s   ;
+ }
+ .bg-3{
+  width:33.3%;
+  height:50%;
+  background:dodgerblue;
+  position:absolute;
+  bottom:0;
+  right:-5px;
+  border-radius:70px 0 0 0; 
+  box-shadow:-4px 0 8px black;
+  animation:slideinfrombottom 0.8s ease-in;
+  }
+ 
+ .bg-4{
+  width:75%;
+  height:40%;
+  background:gold;
+  position:absolute;
+  z-index:-1;
+  border-radius:50%;
+  top:32%;
+  left:10%;
+  opacity:0.8;
+  box-shadow:0 4px 8px black;
+  animation:shrink 0.8s ease-in;
+ }
+ .bg-5{
+  width:100%;
+  height:25%;
+  background:#1DFFF6;
+  position:absolute;
+  border-radius:0 10px 0 10px;
+  top:40%;
+  z-index:3;
+  opacity:0.7;
+  box-shadow:0 4px 8px black;
+  animation:flip 0.8s ease-in;
+ }
+  @keyframes slideinfromleft{
+ 	0%{
+ 		transform:translateX(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes shrink{
+ 	0%{
+ 		transform:scale(0)
+ 	}
+ 	100%{transform:scale(1);
+ 	
+ 	}
+ }
+ @keyframes spin{
+ 	0%{
+ 		transform:rotate(360deg);
+ 		}
+ 	100%{
+ 		transform:rotate(0);
+ 	}
+ }
+ @keyframes flip{
+ 	0%{
+ 		transform:rotateX(0);
+ 	}
+ 	100%{
+ 		transform:rotateX(360deg);
+ 	}
+ }
+ @keyframes slideinfrombottom{
+ 	0%{
+ 		transform:translateY(100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ /*background-styling-end*/
+ /*main-content-styling-start*/
+ .body{
+  position:absolute;
+  z-index:100;
+  color:white;
+ }
+ .container{
+ 	width:100vw;
+  max-width:960px;
+  margin:0 auto;
+  padding:0 20px;
+ }
+ .header{
+ 	display:flex;
+ 	justify-content:space-between;
+ }
+ nav{
+ 	display:flex;
+ 	justify-content:space-between;
+ 	align-items:center;
+ 	height:auto;
+ 	
+ }
+ nav a{
+  color:white;
+  text-decoration:none;
+  margin:5px;
+  padding:5px;
+  font-weight:bold;
+ }
+ nav a:hover{
+ 	border-bottom:2px solid white;
+ 	transform:scale(0.9);
+ 	background:transparent;
+ }
+ img{
+ 	width:200px;
+ 	height:autopx;
+ }
+ p{
+ 	height:20000px;
+ }
+ /*main-content-styling-end*/
+
+  
+		</style>
+	</head>
+	<body>
+		<!--background-markup-->
+		<div class="bg-imgs2">
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+			<div class="bg-3"></div>
+			<div class="bg-4"></div>
+			<div class="bg-5"></div>
+		</div>
+   </body>
+</html>
