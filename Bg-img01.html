@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--<meta http-equiv="refresh" content="5;blogsite2.html">-->
+		<title>Background design 1</title>
+		<link rel="stylesheet"href="Fontawesome.web/Fontawesome.web/css/all.css">
+		<style>
+ *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+ }
+ body{
+  width:100vw;
+  height:100vh;
+  background:#000;
+ }
+ /*background-styling-start*/
+ .bg-imgs{
+  display:flex;
+  width:100%;
+  height:100%;
+  opacity:0.8;
+  /*making-it-unscrollable*/
+  position:fixed;
+  z-index:1;
+ }
+ .bg-1{
+  width:33.3%;
+  height:20.33%;
+  background:red;
+  border-radius:0 0 10px 0;
+  animation:slideinfromright 1s ease-in;
+ }
+ .bg-2{
+  width:33.3%;
+  height:10%;
+  background:lime;
+  position:absolute;
+  top:33.3%;
+  left:33.3%;
+border-radius:0 10px 0 10px ;
+animation: spin 1s forwards;
+ }
+ .bg-3{
+  width:33.3%;
+  height:35%;
+  background:blue;
+  position:absolute;
+  bottom:0;
+  right:0;
+  border-radius:10px 0 0 0;
+  animation:slideinfromleft 1s ease-in;
+   }
+ .bg-4{
+  width:33.3%;
+  height:56.3%;
+  background:gold;
+  position:absolute;
+  border-radius:0 10px 0 0;
+  bottom:0;
+  left:0;
+  animation:slideinfromtop 1s ease-in;
+ }
+ .bg-5{
+  width:33.3%;
+  height:33.3%;
+  background:#1DFFF6;
+  position:absolute;
+  border-radius:0 0 0 10px;
+  right:0;
+  animation:slideinfrombottom 1s ease-in;
+ }
+ @keyframes slideinfromleft{
+ 	0%{
+ 		transform:translateX(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes slideinfromright{
+ 	0%{
+ 		transform:translateX(100%);
+ 	}
+ 	100%{transform:translateX(0);
+ 	
+ 	}
+ }
+ @keyframes spin{
+ 	0%{
+ 		transform:scale(0.2);
+ 		background:red;
+ 		}
+ 		25%{
+ 			background:gold;
+ 			transform:rotate(90deg);
+
+ 		}
+ 		50%{
+ 			background:blue;
+ 			transform:rotate(180deg);
+ 		}
+ 		75%{
+ 			background:#1DFFF6;
+ 			transform:rotate(270deg);
+ 		}
+ 	100%{
+ 		background:lime;
+ 		transform:rotate(360deg);
+ 	}
+ }
+ @keyframes slideinfromtop{
+ 	0%{
+ 		transform:translateY(-100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ @keyframes slideinfrombottom{
+ 	0%{
+ 		transform:translateY(100%);
+ 	}
+ 	100%{
+ 		transform:translateX(0);
+ 	}
+ }
+ /*background-styling-end*/
+ /*main-content-styling-start*/
+ .body{
+  position:absolute;
+  z-index:100;
+  color:white;
+  width:100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .container{
+	 max-width: 1400px;
+	 padding: 0 20px;
+	 margin: 0 auto;
+ }
+.header{
+	width: 100vw;
+	height: 70px;
+}
+.education, .vacation, .interest{
+	flex-direction: column;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px;
+	gap: 10px;
+	justify-content: center;
+}
+.header h1{
+	font-family:inherit;
+}
+.header nav ul{
+	display: flex;
+}
+.header nav ul li{
+	justify-content: space-between;
+	margin: 10px;
+	padding: 10px;
+	list-style-type: none;
+}
+.main .vacation ul li{
+	list-style-type:none ;
+}
+nav a i{
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	font-size: 18px;
+	transition:transform 1s ease-in;
+	transform:scale(0.9);
+}
+nav a:hover{
+	border-bottom: 2px solid white;
+	padding: 5px 0;
+}
+i:hover{
+	color:#999;
+}
+.main{
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+.main .flex .text{
+justify-self: center;
+margin: 0 40px;
+}
+.main .text h2{
+	margin: 20px 0;
+	text-shadow: 0 4px 3px #111;
+}
+.text-center{
+	text-align: center;
+	padding: 0 20px;
+}
+.text-left{
+	text-align: left;
+	padding: 0 20px;
+}
+.text-right h2{
+	text-align: right;
+	padding: 0 20px;
+}
+.text{
+	font-weight: bold;
+}
+img{
+	width:500px;
+	height:500px;
+	border-radius: 10px;
+}
+.lg{
+	width: 100%;
+	height: auto;
+}
+.bxsl{
+	box-shadow: -8px 8px 10px rgba(0,0,0,0.9);
+}
+.bxsr{
+	box-shadow: 8px 8px 10px rgba(0,0,0,0.9);
+}
+.bxsd{
+	box-shadow: 0 8px 10px rgba(0,0,0,0.9) ;
+}
+ /*main-content-styling-end*/
+  
+		</style>
+	</head>
+	<body>
+		<!--background-markup-->
+		<div class="bg-imgs">
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+			<div class="bg-3"></div>
+			<div class="bg-4"></div>
+			<div class="bg-5"></div>
+		</div>
+		<!--main-content-markup-start-->
+		<div class="body">
+			<div class="container flex header">
+				<h1>La X-P-RIENS</h1>
+				<nav>
+					<ul>
+						<li><a href="#"><i class="fa fa-home fa-2x" ></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+						<li><a href="#"><i class="fab fa-telegram fa-2x"></i></a></li><li><a href="#"><i class="fa fa-phone fa-2x"></i></a></li>				
+					</ul>
+				</nav>
+			</div>
+			<section class="main">
+				<div class="container flex about">
+					<div class="text">
+						<h2>DAVID KING</h2>
+						<p>Web developer, tech enthusiast,aspiring music prducer and possibly artiste and music freak,amateur guitarist and passionate learner</p>
+					</div>
+					<div>
+						<img src="blackskinnedboy.jpg" class="bxsl">
+					</div>
+				</div>
+			</section>
+			<section class=" main likes">
+				<div class="container flex likes">
+					<div><img src="coffee.jpg.jpg" class="bxsr"></div>
+					<div class=" text text-right">
+						<h2>LIKES</h2>
+						<P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste soluta quod vero earum optio praesentium autem omnis ullam, aperiam fugit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, accusantium iure officiis harum temporibus aliquid amet et ullam nesciunt id.</P>
+					</div>
+				</div>
+			</section>
+			<section class=" main dislikes">
+				<div class="container flex dislikes">
+					<div class=" text">
+						<h2>DISLIKES</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste soluta quod vero earum optio praesentium autem omnis ullam, aperiam fugit</p>
+					</div>
+						<div>
+							<img src="galaxy.jpg.jpg" class="bxsl">
+						</div>
+				</div>
+			</section>
+			<section class="main education">
+				<div class="container flex education">
+					<div><img src="boulders.jpg.jpg" alt="" class="lg bxsd"></div>
+					<div class="text text-center">
+						<h2>EDUCATIONAL BACKGROUND</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquam ducimus eaque eius quod, nesciunt ad aut animi officiis, id rem eos provident hic? Minima, dolorum quibusdam? Debitis dignissimos maxime harum soluta obcaecati temporibus voluptate recusandae blanditiis alias dicta exercitationem mollitia amet, a enim ad rem repellendus quaerat saepe? Nesciunt.</p>
+					</div>
+				</div>
+			</section>
+			<section class="main background">
+				<div class="container flex background">
+					<div>
+					<img src="woods.jpg.jpg" alt="" class="bxsr">
+					</div>
+					<div class="text text-right">
+					<h2>BACKGROUND</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rerum eaque, mollitia similique, ducimus aperiam doloribus facere harum at saepe, ipsa culpa ratione vitae suscipit in reprehenderit dolorum nemo! Provident.</p>
+					</div>
+				</div>
+			</section>
+			<section class="main experience">
+				<div class="container flex experience">
+					<div class="text">
+					<h2>EXPERIENCE</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rerum eaque, mollitia similique, ducimus aperiam doloribus facere harum at saepe, ipsa culpa ratione vitae suscipit in reprehenderit dolorum nemo! Provident.</p>
+					</div>
+					<div>
+						<img src="car.jpg.jpg" alt="" class="bxsl">
+				</div>
+				</div>
+			</section>
+			<section class="main career">
+				<div class="container flex career">
+					<div>
+					<img src="cracked.jpg.jpg" alt="" class="bxsr">
+					</div>
+					<div class="text text-right">
+					<h2>DREAM JOB/CAREER</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rerum eaque, mollitia similique, ducimus aperiam doloribus facere harum at saepe, ipsa culpa ratione vitae suscipit in reprehenderit dolorum nemo! Provident.</p>
+					</div>
+				</div>
+			</section>
+			<section class="main dreamcountry">
+				<div class="container flex dreamcountry">
+					<div class="text">
+					<h2>DREAM COUNTRY OF RESIDENCE</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rerum eaque, mollitia similique, ducimus aperiam doloribus facere harum at saepe, ipsa culpa ratione vitae suscipit in reprehenderit dolorum nemo! Provident.</p>
+					</div>
+					<div>
+						<img src="goldenmoon.jpg.jpg" alt="" class="bxsl">
+				</div>
+				</div>
+			</section>
+			<section class="main vacation">
+				<div class="container flex vacation">
+					<div><img src="biker.jpg.jpg" alt="" class="lg bxsd"></div>
+					<div class="text text-center">
+						<h2>PLACES I'D LOVE TO VISIT</h2>
+						<p>
+							<ul>
+								<li>Dubai</li>
+								<li>Korea</li>
+								<li>India</li>
+								<li>South Africa</li>
+								<li>Switzerland</li>
+								<li>Mexico</li>
+								<li>China</li>
+								<li>Kenya</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class=" main interest">
+				<div class="container flex interest">
+					<div class=" text text-center">
+						<h2>INTERESTS</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste soluta quod vero earum optio praesentium autem omnis ullam, aperiam fugit</p>
+					</div>
+						<div>
+							<img src="smoothstones.jpg.jpg" style="width:800px;height:800px;border-radius:12.50%;margin-top: 20px;" class="bxsd">
+						</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
